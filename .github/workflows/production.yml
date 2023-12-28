@@ -47,6 +47,6 @@ jobs:
          uses: peter-evans/repository-dispatch@v2
          with:
            token: ${{ secrets.NOTIFY_PAT }}
-           repository: https://github.com/swathiarjun/shopping-app-infra
+           repository: https://github.com/swathiarjun/shopping-app-infra-repo
            event-type: deploy-event-prod
 
