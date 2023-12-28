@@ -43,10 +43,4 @@ jobs:
            AWS_SECRET_ACCESS_KEY: ${{ secrets.PROD_SECRET_KEY }}
            AWS_DEFAULT_REGION: ${{ secrets.PROD_REGION }}
 
-      -  name: "Notify the job deploy for prod"
-         uses: peter-evans/repository-dispatch@v2
-         with:
-           token: ${{ secrets.NOTIFY_PAT }}
-           repository: swathiarjun/shopping-app-infra-repo
-           event-type: deploy-event-prod
-
+      
